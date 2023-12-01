@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/updates.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/level.css">
+    <script src="loader.js"></script>
+    <link rel="stylesheet" href="css/loader.css">
+    <!-- End -->
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>- X D - News</title>
+    <link rel="icon" href="icons/img.png">
+</head>
+<body>
+
+    <div class="load-screen">
+        <span class="loader"></span>
+    </div>
+
+    <div class="header">
+    <header>
+        <h2>- X <span> D -</span></h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="news.html">News</a></li>
+            <li>
+                <a href="#">More</a>
+                <ul class="dropdown">
+                    <li><a>Soon...</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    </div>
+
+    <!-- Side Menu -->
+    <input type="checkbox" id="check">
+        <label for="check">
+        <a id="menu">Menu</a>
+        <a id="cancel">Close</a>
+        </label>
+        <div class="sidebar">
+            <header>- X D -</header>
+            <ul>
+                <i class="fas fa-clock"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </div>
+    <!-- End -->
+
+    <h1 class="padding"></h1>
+
+    <h1 class="title">News</h1>
+    <h2 class="des">What News In Last Update?</h2>
+    <hr>
+
+    <div class="blog-container" id="blogContainer"></div>
+    <script src="blog.js"></script>
+
+    <footer class="footer">
+        <h6>©<p id="currentYear"></p> All rights reserved.</h6>
+        <a href="index.html">Home</a>
+    </footer>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').innerHTML = currentYear;
+    </script>
+</body>
+</html>

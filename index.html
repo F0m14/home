@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/alert.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="loader.js"></script>
+    <link rel="stylesheet" href="css/loader.css">
+    <!-- End -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <title>- X D -</title>
+    <meta name="description" content="- X D - Offical Website">
+    <meta name="keywords" content="F0m, - X D -">
+    <link rel="icon" href="icons/img.gif">
+</head>
+
+<body>
+
+    <div class="load-screen">
+        <span class="loader"></span>
+    </div>
+
+    <div class="header">
+        <header>
+            <h2>- X <span> D -</span></h2>
+            <ul>
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li>
+                    <a href="#">More</a>
+                    <ul class="dropdown">
+                        <li><a>Soon...</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- Side Menu -->
+    <input type="checkbox" id="check">
+        <label for="check">
+        <a id="menu">Menu</a>
+        <a id="cancel">Close</a>
+        </label>
+        <div class="sidebar">
+            <header>- X D -</header>
+            <ul>
+                <i class="fas fa-clock"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </div>
+    <!-- End -->
+
+    <!-- Alert -->
+    <div class="toast show">
+        <div class="toast-content">
+            <div class="message">
+                <span class="text text-1">New Update</span>
+                <span class="text text-2">Website Updated</span>
+            </div>
+        </div>
+        <div class="progress"></div>
+        <script>
+            $('.toast').addClass("show")
+            setTimeout(function(){
+                $('.toast').addClass("hide")
+            }, 5000)
+        </script>
+    </div>
+    <!-- End -->
+
+    <!-- Home -->
+    <section class="home">
+        <div class="content">
+            <div class="container-texts">
+                <h4 id="test">Hello, I am</h4>
+                <h1>- X<span> D -</span></h1>
+                <h3>Dev & Gaming Person Plays Games</h3>
+
+                <a href="https://f0m14.github.io/fn-leaks" class="btn" target="_blank">Fortnite Leaks (Andriod Only)</a>
+                <div class="social">
+                    
+                    <a href="https://youtube.com/@F0m_1430" target="_blank"><img src="images/icons/youtube.png"></a>
+                    <a href="https://www.instagram.com/f0m_1430/" target="_blank"><img src="images/icons/instagram.png"></a>
+                    <a href="https://www.twitch.tv/f0m_14" target="_blank"><img src="images/icons/twitch.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container-images">
+            <img src="images/f0m.jpg" class="floating">
+        </div>
+        <div class="container-texts">
+            <h1>About <span>Me</span></h1>
+            <h5> <span>I'm </span>Developer</h5>
+            <p>
+                I am - X D -, I am 15 Years old, I am Just website <span>Developer</span> And <span>Gamer</span>, I Love Chat In Any App And I Love <span>Fortnite</span>.</a>
+            </p>
+        </div>
+    </section>
+
+    <section class="social-media">
+        <h2>Social Media</h2>
+        <div class="cardDis">
+            <div class="card youtube">
+                <!-- <img src="images/f0m.jpg" alt="Profile Picture"> -->
+                <h2>- X D -</h2>
+                <p>Offical Channel</p>
+                <a href="http://www.youtube.com/@F0m_1430/" target="_blank">YouTube Channel</a>
+              </div>
+            
+              <div class="card insta">
+                <!-- <img src="images/f0m.jpg" alt="Profile Picture"> -->
+                <h2>- X D -</h2>
+                <p>Offical Insta Account</p>
+                <a href="http://www.instagram.com/f0m_1430/" target="_blank">Instagram Profile</a>
+            </div>
+            
+              <div class="card twitch">
+                <!-- <img src="images/f0m.jpg" alt="Profile Picture"> -->
+                <h2>- X D -</h2>
+                <p>Offical Streams channel</p>
+                <a href="https://www.twitch.tv/f0m_14" target="_blank">Twitch Channel</a>
+              </div>
+    
+              <div class="card discord">
+                <!-- <img src="images/f0m.jpg" alt="Profile Picture"> -->
+                <h2>- X D -</h2>
+                <p>Offical Discord Account</p>
+                <a>ID: f0m_1430</a>
+              </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h6>©<p id="currentYear"></p> All rights reserved.</h6>
+        <a href="news.html">Website Version</a>
+    </footer>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').innerHTML = currentYear;
+    </script>
+</body>
+</html>

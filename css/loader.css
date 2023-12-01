@@ -1,0 +1,60 @@
+.load-screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    min-height: 90vh;
+    background-color: #111;
+    transition: opacity 99.9s, visibility 1s;
+  }
+  
+  .loader{
+    display: inline-block;
+    width: 300px;
+    height: 20px;
+    border-radius: 40px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
+  
+  .loader::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 150%;
+    height: 100%;
+    background-image: linear-gradient(332deg, #0fcef5, #85f9a6);
+    border-radius: inherit;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: scale 4s infinite;
+  }
+  
+  @keyframes scale{
+    50%{
+      transform: scaleX(1);
+    }
+    100%{
+      transform: scaleX(0);
+      transform-origin: right;
+    }
+  }
+  
+  .fade{
+    opacity: 0;
+    visibility: hidden;
+  } 
+
+  /* @media screen and (max-width: 575px){
+    .loader{
+      left: -12%;
+      top: -12%;
+    }
+  } */

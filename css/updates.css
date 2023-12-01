@@ -1,0 +1,36 @@
+hr{
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-post {
+    background-color: #333; /* Darken the background color */
+    border: 1px solid #fff; /* White border */
+    box-shadow: 5px 5px 10px #888; /* Gray shadow */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-post h2{
+    margin-bottom: 10px;
+}
+
+.blog-post h4{
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.blog-post h6{
+    font-size: 14px;
+    color: #ff274b;
+}
