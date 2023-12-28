@@ -1,6 +1,12 @@
 // Sample data for blog updates with release date
 const blogData = [
     {
+      title: "Fix Update",
+      content: "Add Settings Page, Fix Home Page",
+      releaseDate: "2023-12-28",
+      version: "1.41"
+    },
+    {
         title: "New Update, Fix Update",
         content: "Remove Level System, Remove Chat Bot, Remove Simple Game BETA Version, Fix Some Bugs, Remove QR Code Creator",
         releaseDate: "2023-12-01",

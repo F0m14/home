@@ -11,13 +11,12 @@
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/header.css">
     <script src="loader.js"></script>
-    <link rel="stylesheet" href="css/loader.css">
     <!-- End -->
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
     <title>- X D -</title>
     <meta name="description" content="- X D - Offical Website">
     <meta name="keywords" content="F0m, - X D -">
-    <link rel="icon" href="icons/img.gif">
+    <link rel="icon" href="images/f0m.jpg">
 </head>
 
 <body>
@@ -35,7 +34,7 @@
                 <li>
                     <a href="#">More</a>
                     <ul class="dropdown">
-                        <li><a>Soon...</a></li>
+                        <li><a href="settings.html">Settings</a></li>
                     </ul>
                 </li>
             </ul>
@@ -54,6 +53,7 @@
                 <i class="fas fa-clock"></i>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="news.html">News</a></li>
+                <li><a href="settings.html">Settings</a></li>
             </ul>
         </div>
     <!-- End -->
@@ -81,7 +81,7 @@
         <div class="content">
             <div class="container-texts">
                 <h4>Welcome To</h4>
-                <h1>- X<span> D -</span> Site</h1>
+                <h1>- X<span> D -</span></h1>
                 <h3>Here Is All - X D - Things...</h3>
 
                 <a href="https://f0m14.github.io/fn-leaks" class="btn" target="_blank">Fortnite Leaks (Andriod Only)</a>
@@ -111,35 +111,35 @@
     <section class="social-media">
         <h2>Social Media</h2>
         <div class="cardDis">
-            <div class="card youtube">
-                <!-- <img src="images/f0m.jpg" alt="Profile Picture"> -->
-                <h2>- X D -</h2>
-                <p>Offical Channel</p>
-                <a href="http://www.youtube.com/@F0m_1430/" target="_blank">YouTube Channel</a>
-              </div>
-            
-              <div class="card insta">
-                <!-- <img src="images/f0m.jpg" alt="Profile Picture"> -->
-                <h2>- X D -</h2>
-                <p>Offical Insta Account</p>
-                <a href="http://www.instagram.com/f0m_1430/" target="_blank">Instagram Profile</a>
-            </div>
-            
-              <div class="card twitch">
-                <!-- <img src="images/f0m.jpg" alt="Profile Picture"> -->
-                <h2>- X D -</h2>
-                <p>Offical Streams channel</p>
-                <a href="https://www.twitch.tv/f0m_14" target="_blank">Twitch Channel</a>
-              </div>
-    
-              <div class="card discord">
-                <!-- <img src="images/f0m.jpg" alt="Profile Picture"> -->
-                <h2>- X D -</h2>
-                <p>Offical Discord Account</p>
-                <a>ID: f0m_1430</a>
-              </div>
+          <div class="card youtube">
+            <!-- <img src="images/f0m.jpg" alt="Profile Picture"> -->
+            <h2>- X D -</h2>
+            <p>Channel</p>
+            <a href="http://www.youtube.com/@F0m_1430/" target="_blank">Visit</a>
+          </div>
+      
+          <div class="card insta">
+            <!-- <img src="images/f0m.jpg" alt="Profile Picture"> -->
+            <h2>- X D -</h2>
+            <p>Instagram Account</p>
+            <a href="http://www.instagram.com/f0m_1430/" target="_blank">Visit</a>
+          </div>
+      
+          <div class="card twitch">
+            <!-- <img src="images/f0m.jpg" alt="Profile Picture"> -->
+            <h2>- X D -</h2>
+            <p>Streams channel</p>
+            <a href="https://www.twitch.tv/f0m_14" target="_blank">Visit</a>
+          </div>
+      
+          <div class="card discord">
+            <!-- <img src="images/f0m.jpg" alt="Profile Picture"> -->
+            <h2>- X D -</h2>
+            <p>Discord Account</p>
+            <a>ID: f0m_1430</a>
+          </div>
         </div>
-    </section>
+      </section>
 
     <footer class="footer">
         <h6>©<p id="currentYear"></p> All rights reserved.</h6>
@@ -149,5 +149,16 @@
         const currentYear = new Date().getFullYear();
         document.getElementById('currentYear').innerHTML = currentYear;
     </script>
+
+    <div style="display: none;" id="settings">
+        <h1 style="margin-bottom: 20px; font-size: 32px;">Font Manager</h1>
+        <label for="font-size">Text Size:</label>
+        <input type="range" id="font-size" min="12" max="24" value="16" step="1">
+        <p>Font Size: <span id="font-size-text"></span></p>
+        
+        <a style="margin-top: 20px;" href="index.html" class="btn" id="back">Back</a>
+
+    </div>
+    <script src="settings.js"></script>
 </body>
 </html>
