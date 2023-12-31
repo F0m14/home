@@ -20,10 +20,10 @@ html{
     --secondaryColor: #998FC7;
     --lightColor: #fff;
     --bgColor-1: #28262C;
-    --bgColor-2: #28262C;
+    --bgColor-2: #0F0E13;
     --padding: 8%;
 
-    --loader-color-1: #85f9a6;
+    --loader-color-1: #F9F5FF;
     --loader-color-2: #14248A;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .padding{
-    padding: 5px;
+    padding: var(--padding);
     color: #171a1c;
 }
 
@@ -84,7 +84,7 @@ body {
 
 .floating{
     position: relative;
-    animation: float 3s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite;
 }
 
 @keyframes float {
