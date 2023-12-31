@@ -16,15 +16,15 @@ html{
 }
 
 :root{
-    --primaryColor: #ff274b;
-    --secondaryColor: #f7bcf7;
+    --primaryColor: #D4C2FC;
+    --secondaryColor: #998FC7;
     --lightColor: #fff;
-    --bgColor-1: #0F0E13;
-    --bgColor-2: #212226;
+    --bgColor-1: #28262C;
+    --bgColor-2: #28262C;
     --padding: 8%;
 
     --loader-color-1: #85f9a6;
-    --loader-color-2: #0fcef5;
+    --loader-color-2: #14248A;
 }
 
 body {
